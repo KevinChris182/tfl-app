@@ -1,0 +1,25 @@
+@import "~bootstrap/scss/bootstrap";
+
+.search-row {
+    position: absolute;
+    bottom: 24px;
+    width: 100%;
+
+    @media (max-width: 375px) {
+        bottom: 0px;
+    }
+}
+
+.searchbar-wrapper {
+    position: relative;
+    background: #0422a1;
+    padding: 24px;
+
+    .col-12{
+        &:first-child {
+            @media (max-width: 375px) {
+                margin-bottom: 12px;
+            }
+        }
+    }
+}

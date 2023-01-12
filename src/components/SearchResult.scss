@@ -1,0 +1,14 @@
+.search-result {
+    width: 100%;
+    z-index: 2;
+    min-height: 60px;
+    max-height: 120px;
+    overflow-y: auto;
+
+    .search-item {
+        cursor: pointer;
+        &:hover {
+            background-color: azure;
+        }
+    }
+}
