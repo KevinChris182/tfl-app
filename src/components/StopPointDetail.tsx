@@ -35,10 +35,17 @@ const StopPointDetail: React.FC = () => {
 
   return (
     <Row className='g-0 mx-0 mt-3'>
-      <Col xs={12} md={{ span: 8, offset: 2 }}>
+      <Col xs={12} md={{ span: 8, offset: 2 }} className='p-3'>
         <h5 className='mb-3 text-center'>Stop Point Detail</h5>
         {stopPointDetail.length ? (
-          <Table striped bordered hover size='sm' className='align-middle'>
+          <Table
+            responsive
+            striped
+            bordered
+            hover
+            size='sm'
+            className='align-middle'
+          >
             <thead>
               <tr className='table-primary'>
                 <th>

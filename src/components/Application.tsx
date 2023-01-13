@@ -6,6 +6,7 @@ import SearchResult from './SearchResult';
 import useDebounce from '@src/hooks/useDebounce';
 import Navbar from './Navbar';
 import StopPointDetail from './StopPointDetail';
+import Footer from './Footer';
 
 const Application: React.FC = () => {
   const placeTypes: string[] = [
@@ -113,6 +114,7 @@ const Application: React.FC = () => {
         </Col>
       </Row>
       <StopPointDetail />
+      <Footer />
     </>
   );
 };
