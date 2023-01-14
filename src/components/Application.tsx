@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useLayoutEffect, useState } from 'react';
 import './Application.scss';
 import { Row, Col, Form } from 'react-bootstrap';
 import Map from './Map';
@@ -53,7 +53,7 @@ const Application: React.FC = () => {
 
   const { selectedPlace } = useMapStore();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     setShowResult(true);
     async function fetchPlaces() {
       if (from !== '') {
