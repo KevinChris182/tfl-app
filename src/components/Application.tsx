@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Application.scss';
 import { Row, Col, Form } from 'react-bootstrap';
 import Map from './Map';
@@ -53,10 +53,10 @@ const Application: React.FC = () => {
 
   const { selectedPlace } = useMapStore();
 
-  useLayoutEffect(() => {
-    setShowResult(true);
+  useEffect(() => {
     async function fetchPlaces() {
       if (from !== '') {
+        setShowResult(true);
         const res = await fetch(
           `https://api.tfl.gov.uk/Place/Search?name=${debouncedFrom}${
             placeType !== '' ? `&type=${placeType}` : ''
