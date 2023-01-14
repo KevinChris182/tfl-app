@@ -3,7 +3,7 @@ import { Col, Row } from 'react-bootstrap';
 
 const Footer: React.FC = () => {
   return (
-    <Row className='g-0 mx-0 bg-light p-4'>
+    <Row className='g-0 mx-0 bg-light p-4 footer'>
       <Col className='text-center'>
         <span>
           Homemade by{' '}
